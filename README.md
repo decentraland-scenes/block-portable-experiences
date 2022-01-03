@@ -1,4 +1,4 @@
-# block-portable-experiences
+# Block Smart Wearables
 
 Forbid players from claiming a prize if wearing any portable experience.
 
