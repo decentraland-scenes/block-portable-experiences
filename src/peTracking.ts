@@ -1,15 +1,14 @@
 import { getPortableExperiencesLoaded } from '@decentraland/PortableExperiences'
+import { getUserData } from '@decentraland/Identity'
+import { hideDenyUI, showDenyUI } from './denyUI'
 
 export let isWearingPE: boolean = false
 export let hasWornPE: boolean = false
 
 function checkPortableExperiences() {
-  getPortableExperiencesLoaded().then((portableExperiences) => {
-    log(portableExperiences)
-    if (
-      portableExperiences.portableExperiences &&
-      portableExperiences.portableExperiences.length > 0
-    ) {
+  getPortableExperiencesLoaded().then((data) => {
+    log('PORTABLE EXPERIENCES: ', data.portableExperiences)
+    if (data.portableExperiences && data.portableExperiences.length > 0) {
       isWearingPE = true
       hasWornPE = true
       showDenyUI()
@@ -28,9 +27,7 @@ onProfileChanged.add((profileData) => {
   checkPortableExperiences()
 })
 
-import { getUserData } from '@decentraland/Identity'
-
-// check when entering and leaving scene
+// check when entering scene
 getUserData().then((myPlayer) => {
   onEnterSceneObservable.add(async (player) => {
     log('player entered scene: ', player.userId)
@@ -41,6 +38,10 @@ getUserData().then((myPlayer) => {
       if (!isWearingPE) {
         hasWornPE = false
       }
+
+      if (hasWornPE || isWearingPE) {
+        showDenyUI()
+      }
     }
   })
 
@@ -48,10 +49,7 @@ getUserData().then((myPlayer) => {
     log('player left scene: ', player.userId)
     if (player.userId === myPlayer?.userId) {
       log('I left the scene!')
+      hideDenyUI()
     }
   })
 })
-
-export function showDenyUI() {
-  log('CANT PLAY')
-}
