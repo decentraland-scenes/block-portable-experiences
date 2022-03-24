@@ -1,8 +1,8 @@
-let canvas = new UICanvas()
+const canvas = new UICanvas()
 
-let denyTexture = new Texture('images/no-sign.png')
+const denyTexture = new Texture('images/no-sign.png')
 
-let denyImage = new UIImage(canvas, denyTexture)
+const denyImage = new UIImage(canvas, denyTexture)
 denyImage.hAlign = 'center'
 denyImage.vAlign = 'center'
 denyImage.positionX = 0
@@ -16,7 +16,7 @@ denyImage.sourceHeight = 512
 denyImage.isPointerBlocker = false
 denyImage.visible = false
 
-let denyCaption = new UIText(canvas)
+const denyCaption = new UIText(canvas)
 denyCaption.hAlign = 'center'
 denyCaption.vAlign = 'center'
 denyCaption.hTextAlign = 'center'

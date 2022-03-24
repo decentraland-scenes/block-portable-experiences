@@ -4,7 +4,7 @@ export function addPlatforms() {
   const transform = new Transform({
     position: new Vector3(0, 0, 0),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1, 1, 1),
+    scale: new Vector3(1, 1, 1)
   })
   _scene.addComponentOrReplace(transform)
 
@@ -19,7 +19,7 @@ export function addPlatforms() {
   const transform2 = new Transform({
     position: new Vector3(8, 0, 8),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1, 1, 1),
+    scale: new Vector3(1, 1, 1)
   })
   bermudaGrass.addComponentOrReplace(transform2)
 
@@ -29,7 +29,7 @@ export function addPlatforms() {
   const transform3 = new Transform({
     position: new Vector3(8.5, 4, 11.5),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1, 1, 1),
+    scale: new Vector3(1, 1, 1)
   })
   dirtGrass.addComponentOrReplace(transform3)
   const gltfShape2 = new GLTFShape('models/dirt_grass.glb')
@@ -44,7 +44,7 @@ export function addPlatforms() {
   const transform4 = new Transform({
     position: new Vector3(3.5, 0, 3),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1, 1, 1),
+    scale: new Vector3(1, 1, 1)
   })
   dirtGrass3.addComponentOrReplace(transform4)
   dirtGrass3.addComponentOrReplace(gltfShape2)
@@ -55,7 +55,7 @@ export function addPlatforms() {
   const transform5 = new Transform({
     position: new Vector3(2.5, 1, 7),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1, 1, 1),
+    scale: new Vector3(1, 1, 1)
   })
   dirtGrass4.addComponentOrReplace(transform5)
   dirtGrass4.addComponentOrReplace(gltfShape2)
@@ -66,7 +66,7 @@ export function addPlatforms() {
   const transform6 = new Transform({
     position: new Vector3(2.5, 2, 11),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1, 1, 1),
+    scale: new Vector3(1, 1, 1)
   })
   dirtGrass5.addComponentOrReplace(transform6)
   dirtGrass5.addComponentOrReplace(gltfShape2)
@@ -77,7 +77,7 @@ export function addPlatforms() {
   const transform7 = new Transform({
     position: new Vector3(4.5, 3, 13.5),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1, 1, 1),
+    scale: new Vector3(1, 1, 1)
   })
   dirtGrass6.addComponentOrReplace(transform7)
   dirtGrass6.addComponentOrReplace(gltfShape2)
@@ -88,7 +88,7 @@ export function addPlatforms() {
   const transform8 = new Transform({
     position: new Vector3(7.5, 3.5, 13),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(1, 1, 1),
+    scale: new Vector3(1, 1, 1)
   })
   dirtGrass7.addComponentOrReplace(transform8)
   dirtGrass7.addComponentOrReplace(gltfShape2)
@@ -99,7 +99,7 @@ export function addPlatforms() {
   const transform9 = new Transform({
     position: new Vector3(6.5, 0, 8.5),
     rotation: new Quaternion(0, 0, 0, 1),
-    scale: new Vector3(5, 5, 5),
+    scale: new Vector3(5, 5, 5)
   })
   solidYellow.addComponentOrReplace(transform9)
   const gltfShape3 = new GLTFShape('models/solid_yellow.glb')

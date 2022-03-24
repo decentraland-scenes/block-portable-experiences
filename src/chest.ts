@@ -35,7 +35,7 @@ export default class Chest extends Entity {
         {
           button: ActionButton.POINTER,
           hoverText: 'Open',
-          distance: 6,
+          distance: 6
         }
       )
     )
