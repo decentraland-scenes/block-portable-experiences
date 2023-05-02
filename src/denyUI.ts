@@ -25,8 +25,7 @@ denyCaption.positionY = -170
 denyCaption.fontSize = 20
 denyCaption.isPointerBlocker = false
 denyCaption.visible = false
-denyCaption.value =
-  'This scene does not allow smart wearables.\nTake them off, then step out and back in.'
+denyCaption.value = 'This scene does not allow smart wearables.\nTake them off, then step out and back in.'
 
 export function showDenyUI() {
   denyImage.visible = true
